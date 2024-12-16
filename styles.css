@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form input, form select, form button {
+  margin-bottom: 0.5rem;
+}
+
+form input, form select, form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+canvas {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  display: block;
+}
+
+#goalDisplay {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#progressBarContainer {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#progressBar {
+  height: 100%;
+  background-color: #0073e6;
+  width: 0%;
+  border-radius: 10px;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+}
+
+#historyList li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Fitness Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Fitness Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Exercise Input Form -->
+    <section id="exercise-form">
+      <h2>Log Exercise</h2>
+      <form id="logForm">
+        <label for="exercise">Exercise:</label>
+        <input type="text" id="exercise" placeholder="E.g., Running" required>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" placeholder="E.g., 30" required>
+
+        <label for="weight">Your Weight (kg):</label>
+        <input type="number" id="weight" placeholder="E.g., 70" required>
+
+        <label for="intensity">Intensity:</label>
+        <select id="intensity" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <!-- Weekly Progress Chart -->
+    <section id="progress">
+      <h2>Weekly Progress</h2>
+      <canvas id="progressChart"></canvas>
+    </section>
+
+    <!-- Fitness Goal Section -->
+    <section id="goals">
+      <h2>Set Weekly Calorie Goal</h2>
+      <label for="goal">Calories to Burn:</label>
+      <input type="number" id="goal" placeholder="E.g., 2000">
+      <button id="setGoal">Set Goal</button>
+      <p id="goalDisplay">No goal set.</p>
+      <div id="progressBarContainer">
+        <div id="progressBar"></div>
+      </div>
+    </section>
+
+    <!-- Exercise Log -->
+    <section id="history">
+      <h2>Exercise History</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
